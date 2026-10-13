@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amrit Raj | Portfolio</title>
+<meta name="description" content="Amrit Raj, B.Tech Information Technology student. Projects, skills, LinkedIn and GitHub.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--ink:#14213d;--muted:#5b6578;--line:#dde3ee;--accent:#2f5bff;--on-accent:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1424;--card:#171f35;--ink:#eef1f8;--muted:#9aa5bd;--line:#26304b;--accent:#6c8bff;--on-accent:#0e1424}}
+:root[data-theme="dark"]{--bg:#0e1424;--card:#171f35;--ink:#eef1f8;--muted:#9aa5bd;--line:#26304b;--accent:#6c8bff;--on-accent:#0e1424}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.65}
+a{color:inherit}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;text-decoration:none;font-size:1.1rem}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0}
+nav ul a{text-decoration:none;color:var(--muted);font-weight:500}
+nav ul a:hover{color:var(--accent)}
+#menuBtn{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 12px;font:inherit;cursor:pointer}
+.hero{padding:88px 0 72px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.6rem);line-height:1.05;margin:0 0 20px;font-weight:800;letter-spacing:-.03em;max-width:14ch}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:52ch;margin:0 0 32px}
+.btn{display:inline-block;padding:13px 26px;border-radius:10px;font-weight:700;text-decoration:none;background:var(--accent);color:var(--on-accent);margin:0 10px 10px 0}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-size:1.8rem;margin:0 0 24px;letter-spacing:-.02em}
+.about{max-width:62ch;color:var(--muted);font-size:1.05rem}
+.tags{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none;margin:0}
+.tags li{border:1px solid var(--line);background:var(--card);padding:8px 16px;border-radius:999px;font-weight:500}
+.skill-group{margin:0 0 24px}.skill-group h3{font-size:1rem;margin:0 0 10px;color:var(--muted);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.proj h3{margin:0 0 8px}
+.proj p{color:var(--muted);margin:0 0 14px}
+.proj a{color:var(--accent);font-weight:700;text-decoration:none}
+.contact p{color:var(--muted);max-width:50ch}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);text-align:center;font-size:.9rem}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media (max-width:640px){
+#menuBtn{display:block}
+nav ul{display:none;position:absolute;top:60px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line)}
+nav ul.open{display:flex}
+nav ul a{display:block;padding:14px 20px}
+.hero{padding:56px 0 48px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<nav>
+<a class="logo" href="#top">Amrit Raj</a>
+<button id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+<ul id="menu">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main id="top">
+<div class="wrap">
+<div class="hero">
+<h1>Hi, I'm Amrit Raj.</h1>
+<p>B.Tech student in Information Technology, passionate about building practical software and learning new technologies.</p>
+<a class="btn" href="#projects">View projects</a><a class="btn alt" href="#contact">Get in touch</a>
+</div>
+</div>
+
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<p class="about">I am Amrit Raj, a B.Tech student in Information Technology. I enjoy solving problems with code and turning ideas into working projects. You can find my code on GitHub and my professional profile on LinkedIn.</p>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<div class="skill-group"><h3>Frontend</h3><ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React.js</li><li>Tailwind CSS</li><li>Responsive Design</li></ul></div>
+<div class="skill-group"><h3>Backend</h3><ul class="tags"><li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>Authentication (JWT)</li></ul></div>
+<div class="skill-group"><h3>Database</h3><ul class="tags"><li>MongoDB</li><li>MySQL</li></ul></div>
+<div class="skill-group"><h3>Tools &amp; Deployment</h3><ul class="tags"><li>Git &amp; GitHub</li><li>VS Code</li><li>Postman</li><li>Netlify / Vercel</li></ul></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<div class="grid">
+<article class="proj"><h3>AI Hotel Management System</h3><p>A hotel management web application with AI-powered features for handling hotel operations.</p><a href="https://github.com/Amritraj007/ai-hotel-management-system" target="_blank" rel="noopener">View on GitHub</a></article>
+<article class="proj"><h3>JavaScript Practice</h3><p>Hands-on JavaScript fundamentals and exercises, built while following a structured course series.</p><a href="https://github.com/Amritraj007/js-hindi-youtube" target="_blank" rel="noopener">View on GitHub</a></article>
+
+</div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Contact</h2>
+<p>I'm open to internships, collaborations and new opportunities. Feel free to reach out through any of the links below.</p>
+<a class="btn" href="https://www.linkedin.com/in/engineeramritraj/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/Amritraj007" target="_blank" rel="noopener">GitHub</a><a class="btn alt" href="mailto:er.amritrajsingh1@gmail.com">er.amritrajsingh1@gmail.com</a>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Amrit Raj</div></footer>
+
+<script>
+var b=document.getElementById('menuBtn'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded',false)}});
+</script>
+</body>
+</html>
